@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios HTML</title>
+</head>
+<body>
+    <h1>Formulário de Cadastro</h1>
+
+    <form action="processar.php" method="post">
+
+        <!-- Campo de texto simples -->
+        <label for="Nome">Nome completo:</label><br>
+        <input type="text" name="nome" id="name" placeholder="Digite seu nome" required><br><br>
+
+        <!-- Campo de texto E-MAIL -->
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" id="email" placeholder="Digite seu Email..."><br><br>
+
+        <!-- Campo de texto senha -->
+        <label for="senha">Senha:</label><br>
+        <input type="password" name="senha" id="senha" placeholder="Digite sua senha..." required><br><br>
+
+        <!-- Botao de opção (radio) -->
+         <label>Sexo:</label><br>
+         <input type="radio" id="masculino" name="Sexo" value="M">
+         <label for="masculino">Masculino</label><br>
+         <input type="radio" id="feminimo" name="Sexo" value="F">
+         <label for="feminino">Feminino</label><br>
+
+         <br>
+         <!-- Caixass de seleção múltipla (checkox) -->
+          <label >Interesses</label><br>
+          <input type="checkbox" id="programacao" name="interesses" value="design">
+          <label for="programacao">Programação</label><br>
+          
+
+          <input type="checkbox" id="design" name="interesses" value="design">
+          <label for="design">Design</label><br>
+
+          <input type="checkbox" id="esportes" name="esportes" value="esportes">
+          <label for="esportes">Esportes</label><br>
+          <br>
+
+        <!-- Lista de seleção (select) -->
+
+        <label for="cidade">Cidade</label>
+        <select name="cidade" id="cidade">
+            <option value="">Selecione uma cidade</option>
+            <option value="sp">São Paulo</option>
+            <option value="rj">Rio de Janeiro</option>
+            <option value="bh">Belo Horizont</option>
+        </select>
+
+        <br>
+        <br>
+
+
+        <!--Area de texto -->
+        <label for="comentarios">Comentarios</label><br>
+        <textarea name="comentarios" id="comentarios" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Campo de arquivo -->
+         <label for="foto">foto</label><br>
+         <input type="file" name="foto" id="foto"><br><br>
+
+         <!-- Botão para enviar formulário -->
+
+         <button type="submit">Enviar</button>
+         <button type="reset">Limpar</button>
+    </form>
+
+
+</body>
+</html>
